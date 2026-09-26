@@ -1,0 +1,6 @@
+{
+    "blight": 0,
+    "cercospora": 1,
+    "healthy": 2,
+    "rust": 3
+}

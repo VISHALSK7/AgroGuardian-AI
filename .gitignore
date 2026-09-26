@@ -1,0 +1,189 @@
+﻿# =============================================================
+# AgroGuardian AI — .gitignore
+# Covers: Flask/Python backend, Vite/Node frontend, ML models,
+#         secrets, logs, OS artifacts, and IDE files
+# =============================================================
+
+# -------------------------------------------------
+# SECRETS & ENVIRONMENT VARIABLES
+# -------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# -------------------------------------------------
+# PYTHON / FLASK BACKEND
+# -------------------------------------------------
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+MANIFEST
+
+# Unit test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Type-checker caches
+.mypy_cache/
+.dmypy.json
+.pyright/
+
+# Flask-specific
+instance/
+flask_session/
+flask_error.log
+flask_output.log
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# -------------------------------------------------
+# MACHINE LEARNING / MODELS
+# -------------------------------------------------
+*.keras
+*.h5
+*.weights.h5
+*.pb
+*.tflite
+*.onnx
+*.pt
+*.pth
+*.pkl
+*.joblib
+
+# TensorFlow / TensorBoard logs
+logs/
+*.tfevents.*
+tf_logs/
+
+# Training artifacts
+checkpoints/
+*.ckpt
+best_*.h5
+best_*.weights.h5
+training_logs/
+audit/
+plots/
+
+# -------------------------------------------------
+# UPLOADS & USER DATA
+# -------------------------------------------------
+backend/uploads/
+uploads/
+
+# -------------------------------------------------
+# NODE / VITE FRONTEND
+# -------------------------------------------------
+node_modules/
+.pnp
+.pnp.js
+dist/
+dist-ssr/
+.vite/
+.vite-cache/
+yarn.lock
+pnpm-lock.yaml
+
+# Frontend env (keep example)
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# -------------------------------------------------
+# DATABASE
+# -------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+mongo_data/
+data/
+
+# -------------------------------------------------
+# ZIP / ARCHIVE FILES
+# -------------------------------------------------
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+
+# -------------------------------------------------
+# LOGS & TEMP FILES
+# -------------------------------------------------
+*.log
+*.log.*
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.orig
+.cache/
+tmp/
+temp/
+scratch/
+
+# -------------------------------------------------
+# OS ARTIFACTS
+# -------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*~
+
+# -------------------------------------------------
+# IDE / EDITOR
+# -------------------------------------------------
+.vscode/
+*.code-workspace
+.idea/
+*.iml
+*.iws
+*.ipr
+*.sublime-workspace
+*.sublime-project
+.#*
+
+# -------------------------------------------------
+# JUPYTER NOTEBOOKS
+# -------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb

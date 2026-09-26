@@ -1,0 +1,19 @@
+{
+    "model_name": "leaf_validator_v2",
+    "model_type": "binary_classifier",
+    "framework": "TensorFlow/Keras",
+    "input_size": 224,
+    "model_file": "leaf_validator_v2.keras",
+    "labels_file": "labels.json",
+    "version": "1.0",
+    "deployment_ready": true,
+    "created_at": "2026-05-24 15:27:07",
+    "metrics": {
+        "accuracy": 0.986,
+        "precision": 0.984,
+        "recall": 0.983,
+        "f1_score": 0.983,
+        "robustness_score": 0.98,
+        "deployment_score": 98.6
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "anthracnose": 0,
+    "bacterial_canker": 1,
+    "die_back": 2,
+    "healthy": 3,
+    "powdery_mildew": 4,
+    "sooty_mould": 5
+}
